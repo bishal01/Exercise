@@ -1,12 +1,14 @@
-import React from 'react'
+import React  , {useState} from 'react'
 import { Box, Avatar, Typography, Stack, Divider, Button } from "@mui/material";
 import profile from '../image/profile.jpg'
 import { useNavigate } from "react-router-dom";
+import Exercises from '../components/Exercises';
 
 
 const User = () => {
     const navigate = useNavigate(); // Hook to navigate to different routes
-
+    const [exercises, setExercises] = useState([]);
+    const [bodyPart, setBodyPart] = useState('all');
   return (
     <>
     <br/>
@@ -90,6 +92,8 @@ const User = () => {
         </Button>
       </Stack>
     </Box>
+    <Exercises setExercises={setExercises} exercises={exercises} bodyPart={bodyPart} />
+
     </>
   )
 }
