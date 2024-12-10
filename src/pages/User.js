@@ -1,6 +1,6 @@
 import React  , {useState} from 'react'
 import { Box, Avatar, Typography, Stack, Divider, Button } from "@mui/material";
-import profile from '../image/profile.jpg'
+import profile from '../image/profile.webp'
 import { useNavigate } from "react-router-dom";
 import Exercises from '../components/Exercises';
 
@@ -33,9 +33,7 @@ const User = () => {
             boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
           }}
         />
-        <Typography variant="h5" fontWeight="bold" textAlign="center">
-          Ramesh Tamang
-        </Typography>
+        
         <Typography variant="body2" color="textSecondary" textAlign="center">
           Enthusiastic Fitness Lover
         </Typography>
